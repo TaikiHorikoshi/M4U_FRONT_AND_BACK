@@ -25,16 +25,23 @@ app.get('/', (req, res) => {
 
 });
 
-app.get('/admission', (req, res) => {
+app.get('/views/admission', (req, res) => {
     res.render('admission');
 
 });
+
+
+
+app.get('/views/main_page', (req, res) => {
+    res.render('main_page');
+
+});
+
 
 app.get('/renew', (req, res) => {
     res.render('renew');
 
 });
-
 
 
 app.listen(3001, () => {
