@@ -39,5 +39,6 @@ app.get('/renew', (req, res) => {
 
 app.listen(3001, () => {
     console.log('start');
+    console.log('kimersxswfojrlesrhrfoikuvuugrtrttfsrhrtu')
     console.log('http://localhost:3001/');
 })
