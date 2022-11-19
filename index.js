@@ -43,7 +43,10 @@ app.get('/renew', (req, res) => {
 
 });
 
+app.get('/submit', (req, res) => {
+    res.render('submit');
 
+});
 app.listen(3001, () => {
     console.log('start');
     console.log('http://localhost:3001/');
