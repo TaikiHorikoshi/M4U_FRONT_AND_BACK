@@ -47,6 +47,12 @@ app.get('/submit', (req, res) => {
     res.render('submit');
 
 });
+
+app.get('/renew_pass', (req, res) => {
+    res.render('renew_pass');
+
+});
+
 app.listen(3001, () => {
     console.log('start');
     console.log('http://localhost:3001/');
