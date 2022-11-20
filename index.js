@@ -64,12 +64,12 @@ app.get('/choice1', (req, res) => {
 });
 
 app.get('/choice2', (req, res) => {
-    res.render('choice1');
+    res.render('choice2');
 
 });
 
 app.get('/choice3', (req, res) => {
-    res.render('choice1');
+    res.render('choice3');
 
 });
 
