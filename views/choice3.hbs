@@ -1661,12 +1661,69 @@ flexibility(document.documentElement);
 	</div>
 
 	<section
-		style="background-color: #cbebf8; padding: 0.3cm; float: left; margin-left: 3cm; margin-top: 1cm; margin-bottom: 1cm;">
+		style="background-color: #cbebf8; padding: 0.3cm; float: left; margin-left: 3cm; margin-right: 3cm; margin-top: 1cm; margin-bottom: 0.5cm;">
 		<h1 style=" font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 						color: #000000;
-						padding-left:3cm;
-						font-size: 30px;">
-			Step 2.1 : Have it sent to my E-mail address</h1>
+						padding-left:3.5cm;
+						font-size: 30px;padding-right:13cm">
+			Step 2.1 : Have a friend take it for me</h1>
+
+        <p style="padding-left: 4cm;font-size:15px; ">
+            Please allow my friend to take the original document for me
+        </p>
+
+        <div style="float:left; margin-left:4cm; margin-right:8cm">
+            <form action="/action_page.php">
+				<label for="phnum">
+                    <span style="margin-right:4cm">1.Please specify your friend's name-surname as stated in their passport. 
+						<span style="color: red;">*<br></span>
+					</span>
+                </label>
+				<input type="text" id="phnum" name="phnum" ; style="height: 0.5cm;margin-right:11.5cm ;" required><br><br>
+            </form>
+        </div>
+
+		<div style="float:left; margin-left:4cm; margin-right:8cm">
+            <form action="/action_page.php">
+				<label for="phnum">
+                    <span style="margin-right:9.37cm">2.The passport number of my friend is... 
+						<span style="color: red;">*<br></span>
+					</span>
+                </label>
+				<input type="text" id="phnum" name="phnum" ; style="height: 0.5cm;margin-right:11.5cm ;" required><br><br>
+            </form>
+        </div>
+
+        <div style="float:left; margin-left:4cm; margin-right:10cm">
+            <form action="/action_page.php">
+				<label for="phnum">
+                    <span style="margin-right:9.9cm ;">3.My mobile phone number. </span><br> 
+                    <span > You could give your own number / your friend's number / contact person's number.</span>
+                    <span style="color: red;">*<br></span>
+
+                </label>
+				<input type="text" id="phnum" name="phnum" ; style="height: 0.5cm;margin-right:9.7cm ;" required><br><br>
+            </form>
+        </div>
+        
     </section>
+
+    <div style="float: left; margin-left: 40%; margin-bottom:2cm">
+
+        <button class="button" style="background-color: rgb(33, 189, 33); border-radius: 8%; " 
+								onclick="document.location='../new_visa'">
+			<span style=" color:white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Back</span>
+		</button>
+
+        <button class="button" style="background-color: rgb(33, 189, 33); border-radius: 8%; " 
+								onclick="document.location='../submit'">
+			<span style=" color:white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Submit</span>
+		</button>
+
+    </div>
+
+
+      
+
 </body>
 </html>
