@@ -83,6 +83,11 @@ app.get('/insurance', (req, res) => {
 
 });
 
+app.get('/shuttle', (req, res) => {
+    res.render('shuttle');
+
+});
+
 app.listen(3001, () => {
     console.log('start');
     console.log('http://localhost:3001/');
