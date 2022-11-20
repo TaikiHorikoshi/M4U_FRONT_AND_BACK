@@ -53,6 +53,26 @@ app.get('/renew_pass', (req, res) => {
 
 });
 
+app.get('/new_visa', (req, res) => {
+    res.render('new_visa');
+
+});
+
+app.get('/choice1', (req, res) => {
+    res.render('choice1');
+
+});
+
+app.get('/choice2', (req, res) => {
+    res.render('choice1');
+
+});
+
+app.get('/choice3', (req, res) => {
+    res.render('choice1');
+
+});
+
 app.listen(3001, () => {
     console.log('start');
     console.log('http://localhost:3001/');
