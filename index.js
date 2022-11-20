@@ -78,6 +78,11 @@ app.get('/cancel_visa', (req, res) => {
 
 });
 
+app.get('/insurance', (req, res) => {
+    res.render('insurance');
+
+});
+
 app.listen(3001, () => {
     console.log('start');
     console.log('http://localhost:3001/');
