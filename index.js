@@ -88,6 +88,11 @@ app.get('/shuttle', (req, res) => {
 
 });
 
+app.get('/notification', (req, res) => {
+    res.render('notification');
+
+});
+
 app.listen(3001, () => {
     console.log('start');
     console.log('http://localhost:3001/');
