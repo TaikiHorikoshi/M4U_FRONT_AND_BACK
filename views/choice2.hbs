@@ -1673,18 +1673,18 @@ flexibility(document.documentElement);
         </p>
 
                <div style="float:left; margin-left:4cm; margin-right:8cm">
-            <form action="/action_page.php">
-				<label for="phnum">
+            <form action="/choi2/upload"
+			      method="post"
+			      enctype="multipart/form-data">
+				<label for="address">
                     <span>1.Please specify your address in detail, including postal code, phone number and contact person.</span>
                     <span style="color: red;">*<br></span>
 
                 </label>
-				<input type="text" id="phnum" name="phnum" ; style="height: 0.5cm;margin-right:11.5cm ;" required><br><br>
-            </form>
+				<input type="text" id="address" name="address" ; style="height: 0.5cm;margin-right:11.5cm ;" required><br><br>
         </div>
 
         <div style="float:left; margin-left:4cm; margin-right:10cm">
-            <form action="/action_page.php">
 				<label for="phnum">
                     <span style="margin-right:9.9cm ;">2.My mobile phone number. </span><br> 
                     <span > You could give your own number / your friend's number / contact person's number.</span>
@@ -1692,7 +1692,6 @@ flexibility(document.documentElement);
 
                 </label>
 				<input type="text" id="phnum" name="phnum" ; style="height: 0.5cm;margin-right:9.4cm ;" required><br><br>
-            </form>
         </div>
         
     </section>
@@ -1705,12 +1704,12 @@ flexibility(document.documentElement);
 		</button>
 
         <button class="button" style="background-color: rgb(33, 189, 33); border-radius: 8%; " 
-								onclick="document.location='../submit'">
+								type="submit">
 			<span style=" color:white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Submit</span>
 		</button>
 
     </div>
-
+</form>
 
       
 

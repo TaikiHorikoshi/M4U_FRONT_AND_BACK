@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> New Product </h1>
+
+
+
+    
+    <form 
+    action="/products/upload"
+    method="post"
+    enctype="multipart/form-data"
+    >
+
+    <p>
+    <input accept="image/*" type='file' id="imgInp" name="product_img"/>
+    <img id="blah"   height="100"/>
+    </p>
+
+    <p>
+        <input type="text" name="product_name" placeholder="product_name">
+    </p>
+
+    <p>
+        <input type="text" name="product_detail" placeholder="product_detail">
+    </p>
+
+    <p>
+        <input type="number" name="critical" placeholder="critical">
+    </p>
+
+    <p>
+        <input type="number" name="min" placeholder="min">
+    </p>
+
+    <p>
+        <input type="number" name="max" placeholder="max">
+    </p>
+
+    <p>
+        <input type="text" name="barcode" placeholder="barcode">
+    </p>
+
+
+    <p>
+        <button type="submit">Create Product</button>
+    </p>
+    </form>
+
+
+
+    <script>
+       
+
+       imgInp.onchange = evt => {
+  const [file] = imgInp.files
+  if (file) {
+    blah.src = URL.createObjectURL(file)
+    //document.getElementsByTagName('form')[0].submit()
+  }
+}
+
+    </script>
+
+
+  
+    
+</body>
+</html>

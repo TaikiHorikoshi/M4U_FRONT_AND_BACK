@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page for Admin</title>
+</head>
+<style>
+    table{  font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+
+    }
+    td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+    }
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }    
+    </style>
+<body>
+
+    <table style="width:100%">
+        
+        <tr>
+            <th>Numbe student set the notification</th>
+            <th>Name of the student</th>
+            <th>Student's Lamduan-mail</th>
+            <th>Visa expiration date</th>
+            <th>Passport expiration date</th>
+            <th>comments/suggestion</th>
+        </tr>
+       {{#each results}} 
+        <tr>
+
+            <td style="text-align:center;">
+                 {{this.noti_id}}  
+            </td>
+
+            <td >
+                {{this.st_name}} 
+            </td>
+
+            <td style="pading-left:1cm;margin-right:1cm;">
+                {{this.st_Email}} 
+            </td>
+
+            <td>
+                {{this.visa_date}} 
+            </td>
+
+            <td>
+                {{this.passport_date}} 
+            </td>
+
+            <td>
+                {{this.report_date}} {{/each}}
+            </td>
+
+        </tr>
+    </table>
+    
+</body>
+</html>

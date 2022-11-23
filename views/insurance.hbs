@@ -1696,11 +1696,13 @@ flexibility(document.documentElement);
 			alt="Original receipt example"
 			style="height: 120;width: 60; float:left; margin-left:30%; margin-right:40%; padding-bottom:0.5cm">
 
-		<form action="/action_page.php">
-			<input type="file" id="myFile" name="filename">
-		</form>
+		<form action="/refund/upload"
+			  method="post"
+			  enctype="multipart/form-data">
+			<input type="file" id="myFile" name="passfile">
 
-		<p style="padding-top:1cm; padding-left: 3.5cm;font-size:15px">2.Doctor's certificate <span
+
+		<p style="text-align:left;margin-left:3.5cm">2.Doctor's certificate <span
 				style="color: red;">*</span><br>
 			 Please upload high quality and clear scanned file.
 		</p>
@@ -1713,11 +1715,10 @@ flexibility(document.documentElement);
 			alt="Doctor certificate example"
 			style="height: 120;width: 60; float:left; margin-left:30%; margin-right:40%; padding-bottom:0.5cm">
 
-		<form action="/action_page.php">
-			<input type="file" id="myFile" name="filename">
-		</form>
+			<input type="file" id="myFile" name="transfile">
+ 
 
-		<p style="padding-top:1cm; padding-left: 3.5cm;font-size:15px"> 3.Passport: <span
+		<p style="text-align:left;margin-left:3.5cm"> 3.Passport: <span
 				style="color: red;">*</span><br>
 			Please upload high quality and clear scanned file.</p>
 
@@ -1730,12 +1731,12 @@ flexibility(document.documentElement);
 			alt="Passport example"
 			style="height: 120;width: 60; float:left; margin-left:30%; margin-right:40%; padding-bottom:0.5cm">
 
-		<form action="/action_page.php">
-			<input type="file" id="myFile" name="filename">
-		</form>
+ 
+			<input type="file" id="myFile" name="status_file">
+ 
 
 
-		<p style="padding-top:1cm; padding-left: 3.5cm;font-size:15px"> 4.Your own bank account <span
+		<p style="text-align:left;margin-left:3.5cm"> 4.Your own bank account <span
 				style="color: red;">*</span><br>
 			Please upload high quality and clear scanned file.</p>
 
@@ -1748,9 +1749,9 @@ flexibility(document.documentElement);
 			alt="Current Visa Stamp example"
 			style="height: 60;width: 20; float:left; margin-left:30%; margin-right:40%; padding-bottom:0.5cm">
 
-		<form action="/action_page.php">
-			<input type="file" id="myFile" name="filename">
-		</form>
+ 
+			<input type="file" id="myFile" name="stampfile">
+ 
 
 	</section>
     
@@ -1767,25 +1768,25 @@ flexibility(document.documentElement);
         </p>
 
         <div style="float:left; margin-left:2cm; margin-right:10cm">
-            <form action="/action_page.php">
+ 
 				<label for="phnum">
-                    <span style="margin-right:9.8cm ;">2.My mobile phone number. </span><br> 
+                    <span style="margin-right:9.8cm ;">1.My mobile phone number. </span><br> 
                     <span > You could give your own number / your friend's number / contact person's number.</span>
                     <span style="color: red;">*<br></span>
 
                 </label>
 				<input type="text" id="phnum" name="phnum" ; style="height: 0.5cm;margin-right:9.8cm ;" required><br><br>
-            </form>
+ 
         </div>
         
     </section>
 
     	<div style="float: left; margin-left: 45%; margin-bottom:2cm">
 		<button class="button" style="background-color: rgb(33, 189, 33); border-radius: 8%; " 
-								onclick="document.location='../submit'">
+								 type="submit">
 			<span style=" color:white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Submit</span>
 		</button>
 	</div>
-
+	</form>
 </body>
 </html>

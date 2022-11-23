@@ -1673,29 +1673,27 @@ flexibility(document.documentElement);
         </p>
 
         <div style="float:left; margin-left:4cm; margin-right:8cm">
-            <form action="/action_page.php">
-				<label for="phnum">
+            <form action="/choi3/upload"
+			      method="post"
+			      enctype="multipart/form-data">
+				<label for="passname">
                     <span style="margin-right:4cm">1.Please specify your friend's name-surname as stated in their passport. 
 						<span style="color: red;">*<br></span>
 					</span>
                 </label>
-				<input type="text" id="phnum" name="phnum" ; style="height: 0.5cm;margin-right:11.5cm ;" required><br><br>
-            </form>
+				<input type="text" id="passname" name="passname" ; style="height: 0.5cm;margin-right:11.5cm ;" required><br><br>
         </div>
 
 		<div style="float:left; margin-left:4cm; margin-right:8cm">
-            <form action="/action_page.php">
-				<label for="phnum">
+				<label for="passnum">
                     <span style="margin-right:9.37cm">2.The passport number of my friend is... 
 						<span style="color: red;">*<br></span>
 					</span>
                 </label>
-				<input type="text" id="phnum" name="phnum" ; style="height: 0.5cm;margin-right:11.5cm ;" required><br><br>
-            </form>
+				<input type="text" id="passnum" name="passnum" ; style="height: 0.5cm;margin-right:11.5cm ;" required><br><br>
         </div>
 
         <div style="float:left; margin-left:4cm; margin-right:10cm">
-            <form action="/action_page.php">
 				<label for="phnum">
                     <span style="margin-right:9.9cm ;">3.My mobile phone number. </span><br> 
                     <span > You could give your own number / your friend's number / contact person's number.</span>
@@ -1703,7 +1701,6 @@ flexibility(document.documentElement);
 
                 </label>
 				<input type="text" id="phnum" name="phnum" ; style="height: 0.5cm;margin-right:9.7cm ;" required><br><br>
-            </form>
         </div>
         
     </section>
@@ -1716,12 +1713,12 @@ flexibility(document.documentElement);
 		</button>
 
         <button class="button" style="background-color: rgb(33, 189, 33); border-radius: 8%; " 
-								onclick="document.location='../submit'">
+								type="submit">
 			<span style=" color:white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Submit</span>
 		</button>
 
     </div>
-
+</form>
 
       
 

@@ -1698,20 +1698,21 @@ flexibility(document.documentElement);
 			alt="Student status certificate example"
 			style="height: 120;width: 60; float:left; margin-left:30%; margin-right:40%; padding-bottom:0.5cm">
 
-		<form action="/action_page.php">
-			<input type="file" id="myFile" name="filename">
-		</form>
+		<form action="/newvisa/fromhome"
+			  method="post"
+			  enctype="multipart/form-data">
+			<input type="file" id="myFile" name="passfile">
 
-		<p style="padding-top:1cm; padding-left: 3.5cm;font-size:15px"> 2.Transcript: <span
+		<p style="text-align:left; margin-left:3.5cm;"> 2.Transcript: <span
 				style="color: red;">*</span><br>
-			<span style="color: red;">NOTE! </span>For the first enrollment student, you don't need to attached
+			<span style="color: red; margin-left:0.5cm;">NOTE! </span>For the first enrollment student, you don't need to attached
 			transcript on this section.
-			Please upload the certificate of student<br> status document again on this section
+			Please upload the certificate of student<br> <span style="margin-left: 0.5cm;">status document again on this section</span>
 		</p>
-        <p>
-            <span style="padding-left: 3.5cm;">( </span><sapn style="color:red;">NOTE! </sapn>
+        <p style="text-align:left;margin-left:3.5cm;">
+            <span style="margin-left:0.5cm;">( </span><sapn style="color:red;">NOTE! </sapn>
             After you pay the document's fee, you must send an email to <a href="reg@mfu.ac.th" style="color: rgb(28, 8, 117); text-decoration:underline">reg@mfu.ac.th</a>, inform them that you need<br>
-            <span style="padding-left: 3.5cm; padding-right:3.3cm"> the scanned files sent through your lamduan email. After you received the scanned files from REG, please attached its here.)</span>
+            <span style="margin-left:0.5cm;"> the scanned files sent through your lamduan email. After you received the scanned files from REG, please attached its here.)</span>
         </p>
 		<span style="padding-left: 3.5cm;">Apply at the Registar Division office or apply online at</span>
 		<a href="https://reg.mfu.ac.th/DocumentRequest/"><span style="color:rgb(28, 8, 117);
@@ -1725,11 +1726,10 @@ flexibility(document.documentElement);
 			alt="Transcript example"
 			style="height: 120;width: 60; float:left; margin-left:30%; margin-right:40%; padding-bottom:0.5cm">
 
-		<form action="/action_page.php">
-			<input type="file" id="myFile" name="filename">
-		</form>
 
-		<p style="padding-top:1cm; padding-left: 3.5cm;font-size:15px"> 3.Passport: <span
+			<input type="file" id="myFile" name="transfile">
+
+		<p style="text-align:left; margin-left:3.5cm;"> 3.Passport: <span
 				style="color: red;">*</span><br>
 			Please upload high quality and clear scanned file.</p>
 
@@ -1742,12 +1742,10 @@ flexibility(document.documentElement);
 			alt="Passport example"
 			style="height: 120;width: 60; float:left; margin-left:30%; margin-right:40%; padding-bottom:0.5cm">
 
-		<form action="/action_page.php">
-			<input type="file" id="myFile" name="filename">
-		</form>
 
+			<input type="file" id="myFile" name="status_file">
 
-		<p style="padding-top:1cm; padding-left: 3.5cm;font-size:15px"> 4.Current visa stamp: <span
+		<p style="text-align:left; margin-left:3.5cm;"> 4.Current visa stamp: <span
 				style="color: red;">*</span><br>
 			Please upload high quality and clear scanned file.</p>
 
@@ -1760,9 +1758,7 @@ flexibility(document.documentElement);
 			alt="Current Visa Stamp example"
 			style="height: 60;width: 20; float:left; margin-left:20%; margin-right:40%; padding-bottom:0.5cm">
 
-		<form action="/action_page.php">
-			<input type="file" id="myFile" name="filename">
-		</form>
+			<input type="file" id="myFile" name="stampfile">
 
 	</section>
 
@@ -1781,7 +1777,6 @@ flexibility(document.documentElement);
         </p>
 
         <div style="float: left; margin-left:3cm">
-            <form action="/action_page.php">
             <label for="getDoc"><span style="color: black;">1. I want to get the document by..</span> <span style="color: red;">*<br></span></label>
                 <select name="getDoc" id="getDocs" style="margin-left:3cm; color:#000000">
                     <option value="choose1">Have it sent to my E-mail address</option>
@@ -1789,19 +1784,19 @@ flexibility(document.documentElement);
                     <option value="choose3">Have a friend take it for me</option>
                 </select>
             <br><br>
-            </form>
         </div>
     </section>
 
     <div style="float: left; margin-left: 45%; margin-bottom:2cm">
 		<button class="button" style="background-color: rgb(33, 189, 33); border-radius: 8%; " 
-								onclick="ch1()">
+								 type="submit">
 			<span style=" color:white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Next</span>
 		</button>
 	</div>
+	</form>
      <p id="not-found"></p>
 
-    <script>
+    <script id="nextstep">
     function ch1()
     {
             var ch = document.getElementById("getDocs").value;

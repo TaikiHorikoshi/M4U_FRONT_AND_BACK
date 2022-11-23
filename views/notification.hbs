@@ -1664,18 +1664,27 @@ flexibility(document.documentElement);
 		<h1
 			style="float: left;margin-left: 25%;margin-right: 15%;padding-right:3cm; padding-top: 0.5cm;font-size: 40px;">
                SET NOTIFICATION FOR VISA AND PASSPORT</h1>
-        <p style="font-size: 17px; margin-left:27%; ">
-            (Notity your visa expiration date, passport expiration date, 90 day report date)
+        <p style="font-size: 17px; margin-left:21%; ">
+            (Notity your Name, E-mail address, visa expiration date, passport expiration date, 90 day report date)
         </p>
 	</section>
 
     <section
 		style="background-color: #cbebf8; padding-right:1.5cm; padding-left:1.5cm; padding-top:1.5cm; float: left; margin-left: 3cm;margin-right: 3cm; margin-top: 1cm; margin-bottom: 0.5cm; ">
-        <div style="float: left; text-align:left; color:#000000; padding-right:20cm">
-            <form action="/action_page.php">
-            <label for="visaex">1. Fill in your visa expiration date <span style="color: red;">*<br></span></label>
-            <input type="date" id="visaex" name="visaex" style="">
-        </form>
+        
+            <form action="/noti/fication"
+				  method="post"
+				  enctype="multipart/form-data">
+		<div style="text-align:left; color:#000000;">
+			<label for="stName" style="margin-left:">1.Please fill in your name:<br></label>
+            <input type="text" id="stName" name="stName" style="height: 0.5cm;width:7cm; margin-left:2.8cm">
+
+			<label for="stMail"><br>2.Please fill in your lamduan E-mail address:<br></label>
+            <input type="text" id="stMail" name="stMail" style="height: 0.5cm;width:10cm;margin-left:2.8cm">
+
+            <label for="visaex"><br>3.Fill in your visa expiration date <span style="color: red;">*<br></span></label>
+            <input type="date" id="visaex" name="visaex" style="margin-left:2.8cm">
+ 
         </div>
         <p style=" font-size:17px;color: red; text-decoration:underline;text-align:center">
             Sample of visa experition date (PDF)
@@ -1686,11 +1695,10 @@ flexibility(document.documentElement);
 		style="height: 60;width: 20; float:left; margin-left:20%; margin-right:40%; padding-bottom:0.5cm; ">
 
         <div style="float: left; text-align:left; color:#000000; padding-right:19cm">
-            <form action="/action_page.php">
-            <label for="visaex">2. Fill in your passport expiration date<span style="color: red;">*<br></span></label>
-            <input type="date" id="visaex" name="visaex" style="">
-        </form>
-        </div>
+ 
+            <label for="passex">4.Fill in your passport expiration date<span style="color: red;">*<br></span></label>
+            <input type="date" id="passex" name="passex" style="margin-left:2.8cm" >
+         </div>
         <p style=" font-size:17px; color: red; text-decoration:underline;text-align:center">
             Sample scanned file of passport document (PDF)
         </p>
@@ -1700,11 +1708,9 @@ flexibility(document.documentElement);
 		style="height: 60;width: 20; float:left; margin-left:30%; margin-right:40%; padding-bottom:0.5cm; ">
 
         <div style="float: left; text-align:left; color:#000000; padding-right:19cm">
-            <form action="/action_page.php">
-            <label for="visaex">3. Fill in your 90 day report stated date<span style="color: red;">*<br></span></label>
-            <input type="date" id="visaex" name="visaex" style="">
-        </form>
-        </div>
+             <label for="repo">5. Fill in your 90 day report stated date<span style="color: red;">*<br></span></label>
+            <input type="date" id="repo" name="repo" style="margin-left:2.8cm" >
+         </div>
         <p style=" font-size:17px; color: red; text-decoration:underline;text-align:center">
             Sample scanned file of 90days report document (PDF)
         </p>
@@ -1721,10 +1727,10 @@ flexibility(document.documentElement);
 
     <div style="float: left; margin-left: 45%; margin-bottom:2cm">
 		<button class="button" style="background-color: rgb(33, 189, 33); border-radius: 8%; " 
-								onclick="document.location='../submit'">
+								type="submit">
 			<span style=" color:white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Submit</span>
 		</button>
 	</div>
-
+	</form>
 </body>
 </html>

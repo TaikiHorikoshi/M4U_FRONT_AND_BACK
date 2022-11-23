@@ -1670,6 +1670,7 @@ flexibility(document.documentElement);
 
 	<section
 		style="background-color: #cbebf8; padding: 0.3cm; float: left; margin-left: 3cm; margin-top: 1cm; margin-bottom: 1cm;">
+		
 		<h2 style=" font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 						color: #000000;
 						padding-left:3cm;
@@ -1695,19 +1696,26 @@ flexibility(document.documentElement);
 			alt="Student status certificate example"
 			style="height: 120;width: 60; float:left; margin-left:30%; margin-right:40%; padding-bottom:0.5cm">
 
-		<form action="/action_page.php">
-			<input type="file" id="myFile" name="filename">
-		</form>
+		<form 
+			action="/seki/darubi"
+			method="post"
+			enctype="multipart/form-data"
+		>
+			<input type="file" id="myFile" name="passfile">
+		
 
-		<p style="padding-top:1cm; padding-left: 3.5cm;font-size:15px; padding-right:2.9cm"> 2.Transcript: <span
+		<p style="text-align:left; padding-top:1cm; padding-left: 3.5cm;font-size:15px; padding-right:2.9cm;"> 2.Transcript: <span
 				style="color: red;">*</span><br>
-			<span style="color: red;">NOTE! </span>For the first enrollment student, you don't need to attached
+			<span style="color: red; margin-left:0.5cm;">NOTE! </span>For the first enrollment student, you don't need to attached
 			transcript on this section.
-			Please upload the certificate of student<br> status document again on this section
+			Please upload the certificate of student<br><span style="margin-left: 0.5cm;"> status document again on this section</span>
 		</p>
-		<span style="padding-left: 3.5cm;">Apply at the Registar Division office or apply online at</span>
+		<p>
+			<span style=" text-align:left">Apply at the Registar Division office or apply online at</span>
 		<a href="https://reg.mfu.ac.th/DocumentRequest/"><span style="color:rgb(28, 8, 117);
 							padding-right:3cm">https://reg.mfu.ac.th/DocumentRequest/</span></a>
+		</p>
+		
 		<p style="text-align:center; font-size:15px">
 			<span style="color:red; text-decoration: underline;">
 				<strong>Sample scanned file ofthe certificate of student status document (PDF)</strong>
@@ -1717,13 +1725,12 @@ flexibility(document.documentElement);
 			alt="Transcript example"
 			style="height: 120;width: 60; float:left; margin-left:30%; margin-right:40%; padding-bottom:0.5cm">
 
-		<form action="/action_page.php">
-			<input type="file" id="myFile" name="filename">
-		</form>
+		
+			<input type="file" id="myFile" name="transfile">
 
-		<p style="padding-top:1cm; padding-left: 3.5cm;font-size:15px"> 3.Passport: <span
+		<p style="text-align:left; padding-top:1cm; padding-left: 3.5cm;font-size:15px; padding-right:2.9cm; "> 3.Passport: <span
 				style="color: red;">*</span><br>
-			Please upload high quality and clear scanned file.</p>
+			 <span style="margin-left: 0.5cm;">Please upload high quality and clear scanned file.</span></p>
 
 		<p style="text-align:center; font-size:15px">
 			<span style="color:red; text-decoration: underline;">
@@ -1734,14 +1741,12 @@ flexibility(document.documentElement);
 			alt="Passport example"
 			style="height: 120;width: 60; float:left; margin-left:30%; margin-right:40%; padding-bottom:0.5cm">
 
-		<form action="/action_page.php">
-			<input type="file" id="myFile" name="filename">
-		</form>
+			<input type="file" id="myFile" name="status_file">
 
 
-		<p style="padding-top:1cm; padding-left: 3.5cm;font-size:15px"> 4.Current visa stamp: <span
+		<p style="text-align:left; padding-top:1cm; padding-left: 3.5cm;font-size:15px; padding-right:2.9cm;"> 4.Current visa stamp: <span
 				style="color: red;">*</span><br>
-			Please upload high quality and clear scanned file.</p>
+			<span style="margin-left: 0.5cm;">Please upload high quality and clear scanned file.</span></p>
 
 		<p style="text-align:center; font-size:15px">
 			<span style="color:red; text-decoration: underline;">
@@ -1752,9 +1757,7 @@ flexibility(document.documentElement);
 			alt="Current Visa Stamp example"
 			style="height: 60;width: 20; float:left; margin-left:20%; margin-right:40%; padding-bottom:0.5cm">
 
-		<form action="/action_page.php">
-			<input type="file" id="myFile" name="filename">
-		</form>
+			<input type="file" id="myFile" name="stampfile">
 
 	</section>
 
@@ -1769,20 +1772,18 @@ flexibility(document.documentElement);
 
 		<p style="padding-left:3cm; font-size:15px">Please fill in information listed</p>
 
-		<div style="float:left; margin-right:8cm">
-			<form action="/action_page.php">
-				<label for="phnum"><span style="font-size:15px;padding-left:3cm;">1. Thai's mobile phone number<span>
+		<div style="text-align:left; margin-left:3.5cm; margin-right:8cm">
+				<label for="phnum"><span style="font-size:15px;">1. Thai's mobile phone number<span>
 							<span style="color: red;">*</span></label>
 				<input type="text" id="phnum" name="phnum" ; style="height: 0.5cm;" required><br><br>
 
-				<label for="dname"><span style="font-size:15px;padding-left:5.2cm;">2. Name of the dormitory and room
+				<label for="dname"><span style="font-size:15px;">2. Name of the dormitory and room
 						number<span> <span style="color: red;">*</span></label>
 				<input type="text" id="dname" name="dname" ; style="height: 0.5cm;" required><br><br>
 
-				<label for="fbook"><span style="font-size:15px;padding-left:1.1cm;">3. Facebook Account<span> <span
+				<label for="fbook"><span style="font-size:15px;">3. Facebook Account<span> <span
 								style="color: red;">*</span></label>
 				<input type="text" id="fbook" name="fbook" ; style="height: 0.5cm;" required><br><br>
-			</form>
 		</div>
 
 		<p style="padding-left: 3.5cm; padding-right:3.6cm;  font-size:15px">
@@ -1792,11 +1793,9 @@ flexibility(document.documentElement);
 			submitted this form.
 			<span style="color: red;">*</span>
 		</p>
-		<div>
-			<form action="/action_page.php" style="float:left; margin-left:3.5cm;margin-right:22cm; margin-bottom:1cm">
-				<input type="checkbox" id="Y" name="Y" value="YN">
-				<label for="Y"> Yes</label><br>
-			</form>
+		<div style="padding-left: 3.5cm; padding-right:3.6cm; margin-bottom:0.5cm;">
+				<input type="checkbox" id="Yfour" name="Yfour" value="yes">
+				<label for="Yfour"> Yes</label><br>
 		</div>
 
 		<p style="padding-left: 3.5cm; padding-right:3.6cm;  font-size:15px">
@@ -1805,11 +1804,9 @@ flexibility(document.documentElement);
 			<br>Bureau.
 			<span style="color: red;">*</span>
 		</p>
-		<div>
-			<form action="/action_page.php" style="float:left; margin-left:3.5cm;margin-right:22cm; margin-bottom:1cm">
-				<input type="checkbox" id="Y" name="Y" value="YN">
-				<label for="Y"> Yes</label><br>
-			</form>
+		<div style="padding-left: 3.5cm; padding-right:3.6cm;margin-bottom:0.5cm;">
+				<input type="checkbox" id="Yfive" name="Yfive" value="yes">
+				<label for="Yfive"> Yes</label><br>
 		</div>
 
 		<p style="padding-left: 3.5cm; padding-right:3.6cm;  font-size:15px">
@@ -1818,11 +1815,9 @@ flexibility(document.documentElement);
 			<br> at the Immigration Bureau.
 			<span style="color: red;">*</span>
 		</p>
-		<div>
-			<form action="/action_page.php" style="float:left; margin-left:3.5cm;margin-right:22cm; margin-bottom:1cm">
-				<input type="checkbox" id="Y" name="Y" value="YN">
-				<label for="Y"> Yes</label><br>
-			</form>
+		<div style="padding-left: 3.5cm; padding-right:3.6cm;margin-bottom:0.5cm;">
+				<input type="checkbox" id="Ysix" name="Ysix" value="yes">
+				<label for="Ysix"> Yes</label><br>
 		</div>
 
 
@@ -1830,11 +1825,9 @@ flexibility(document.documentElement);
 			7. Link to download the Immigration form : <a href="https://tinyurl.com/2dc95yda"
 				style="color:rgb(28, 8, 117 ; text-decoration:underline">https://tinyurl.com/2dc95yda</a>
 		</p>
-		<div>
-			<form action="/action_page.php" style="float:left; margin-left:3.5cm;margin-right:22cm; margin-bottom:1cm">
-				<input type="checkbox" id="Y" name="Y" value="YN">
-				<label for="Y"> Yes</label><br>
-			</form>
+		<div style="padding-left: 3.5cm; padding-right:3.6cm;margin-bottom:0.5cm;">
+				<input type="checkbox" id="Yseven" name="Yseven" value="yes">
+				<label for="Yseven"> Yes</label><br>
 		</div>
 
 		<p style="padding-left: 3.5cm; padding-right:3.6cm;  font-size:15px">
@@ -1842,20 +1835,19 @@ flexibility(document.documentElement);
 			Immigration Bureau.
 			<span style="color: red;">*</span>
 		</p>
-		<div>
-			<form action="/action_page.php" style="float:left; margin-left:3.5cm;margin-right:22cm;">
-				<input type="checkbox" id="Y" name="Y" value="YN">
-				<label for="Y"> Yes</label><br>
-			</form>
+		<div style="padding-left: 3.5cm; padding-right:3.6cm;margin-bottom:0.5cm;">
+				<input type="checkbox" id="Yeight" name="Yeight" value="yes">
+				<label for="Yeight"> Yes</label><br>
 		</div>
 	</section>
 
 	<div style="float: left; margin-left: 45%; margin-bottom:2cm">
-		<button class="button" style="background-color: rgb(33, 189, 33); border-radius: 8%; " 
-								onclick="document.location='../submit'">
+		<button class="button" type="submit" style="background-color: rgb(33, 189, 33); border-radius: 8%; " 
+								>
 			<span style=" color:white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Submit</span>
 		</button>
 	</div>
+	</form>
 
 
 </body>
